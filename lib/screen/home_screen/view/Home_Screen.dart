@@ -14,19 +14,23 @@ class Home_Screen extends StatefulWidget {
 
 class _Home_ScreenState extends State<Home_Screen> {
   List Screen = [
-    Product_Screen(),
-    Search_Screen(),
-    Cart_Screen(),
+    const Product_Screen(),
+    const Search_Screen(),
+    const Cart_Screen(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
-        backgroundColor: Colors.white,
+        height: 60,
+        activeColor: Colors.black,
+
+        backgroundColor: Colors.grey.shade50,
         items: const <BottomNavigationBarItem>[
+
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.house_alt),
+            icon: Icon(CupertinoIcons.house_alt,),
             label: 'Product',
           ),
           BottomNavigationBarItem(
