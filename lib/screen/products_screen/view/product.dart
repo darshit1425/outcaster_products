@@ -458,7 +458,6 @@ class _Product_ScreenState extends State<Product_Screen> {
               SizedBox(
                 height: 15,
               ),
-
             ],
           ),
         ),

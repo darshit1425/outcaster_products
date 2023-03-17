@@ -115,7 +115,6 @@ class _Cart_ScreenState extends State<Cart_Screen> {
                 child: CupertinoTextField.borderless(
                   prefix: Icon(
                     CupertinoIcons.time,
-
                     color: Colors.grey,
                   ),
                   placeholder: "Delivery Time",
@@ -138,20 +137,16 @@ class _Cart_ScreenState extends State<Cart_Screen> {
                 child: CupertinoDatePicker(
                   initialDateTime: date,
                   backgroundColor: Colors.black38,
-
-
-
                   mode: CupertinoDatePickerMode.date,
-
-
                   use24hFormat: true,
-
                   onDateTimeChanged: (DateTime newDate) {
                     setState(() => date = newDate);
                   },
                 ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(
+                height: 5,
+              ),
               Column(
                 children: [
                   Container(
